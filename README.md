@@ -32,7 +32,7 @@ sudo mysql -u root -p
 ```
 ```sql
 CREATE DATABASE moodle DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'moodlelabuser'@'localhost' IDENTIFIED BY 'Jq82Vx1tTg!#';
+CREATE USER 'moodlelabuser'@'localhost' IDENTIFIED BY '<請自訂強密碼>';
 GRANT ALL PRIVILEGES ON moodle.* TO 'moodlelabuser'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
@@ -126,7 +126,7 @@ https://moodle-a.lab.com
 ```
 使用者：moodlelabuser
 
-密碼：Jq82Vx1tTg!#
+密碼：<請自訂強密碼>
 
 資料庫：moodle
 
@@ -257,7 +257,7 @@ sudo -u www-data php /var/www/html/moodle/admin/tool/replace/cli/replace.php \
 ```
 使用者：moodlelabuser
 
-密碼：Jq82Vx1tTg!#
+密碼：<請自訂強密碼>
 
 資料庫名稱：moodle
 ```
@@ -269,7 +269,7 @@ mysql -u moodlelabuser -p moodle
 
 系統會提示你輸入密碼，輸入：
 ```
-Jq82Vx1tTg!#
+<請自訂強密碼>
 ```
 
 登入後你會看到類似這樣的提示符號：
@@ -312,6 +312,6 @@ sudo crontab -u www-data -e
 ```
 
 ## ⚠️ 安全性提醒
-本文使用的資料庫帳號 moodlelabuser 及密碼 Jq82Vx1tTg!# 僅為範例，實際部署時請務必修改為強密碼，以保障伺服器安全。
+本文使用的資料庫帳號 moodlelabuser 及密碼 <請自訂強密碼> 僅為範例，實際部署時請務必修改為強密碼，以保障伺服器安全。
 
 ## ⚠️ 本文件為非官方社群指南，與原版 Moodle 專案無任何關聯，僅作為學習與部署參考用途。
